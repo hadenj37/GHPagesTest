@@ -1,0 +1,192 @@
+/* ======= IMPORTS ======= */
+/* Font     Montserrat      */@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Font     Courier Prime   */@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Font(?)  Icons           */@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* ======= PALETTES ======= */
+
+body.navy-style {
+    --main-color: #071952;
+    --bg-color: #37B7C3;
+    --block-color: #088395;
+    --text-color: #EBF4F6;
+}
+
+body.grey-style {
+    --main-color: #27374D;
+    --bg-color: #9DB2BF;
+    --block-color: #526D82;
+    --text-color: #DDE6ED;
+}
+
+/* ======= ELEMENTS ======= */
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+button {
+    border-radius: 12px;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    background-color: var(--main-color);
+    font-family: "Montserrat", Verdana, Tahoma, sans-serif;
+    font-size: medium;
+    padding: 4px 8px 4px 8px;
+}
+
+hr {
+    width: 97%;
+    height: 0;
+    border: 1px solid black;
+}
+
+/*
+ul {
+    padding-inline-start: 20px;
+}
+*/
+
+/* === TEXT === */
+h1 {
+    color: var(--text-color);
+    font-family: "Montserrat", Verdana, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin: 0;
+}
+
+h2 {
+    color: var(--text-color);
+    font-family: "Montserrat", Verdana, Tahoma, sans-serif;
+    font-size: x-large;
+    margin: 6px 0% 6px 0%;
+}
+
+h3 {
+    color: var(--text-color);
+    font-family: "Montserrat", Verdana, Tahoma, sans-serif;
+    font-size: large;
+    margin: 3px 0% 3px 0%;
+}
+
+p {
+    color: var(--text-color);
+    font-family: "Montserrat", Verdana, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+/* ======= CLASSES ======= */
+.back-button {
+    border-radius: 10%;
+}
+
+.bar-link {
+    text-align: right;
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+
+.column-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.plain-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: "Courier Prime", monospace;
+}
+
+.right-block {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.round-img {
+    border-radius: 50%;
+    margin: 50px;
+}
+
+.title-text {
+    font-family: "Montserrat", Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 64px;
+}
+
+/* ======= IDS ======= */
+#about-img {
+    margin: 3% 3% 1% 3%;
+    max-width: 25%;
+    min-width: 256px;
+    display: inline-block;
+}
+
+#about-block {
+    border: 2px solid black;
+    background-color: var(--block-color);
+    padding: 4px 1% 4px 1%;
+    
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 0;
+
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#about-section {
+    position: relative;
+    margin: 2px 2% 2px 1%;
+}
+
+#bottom-bar {
+    background-color: var(--main-color);
+    min-width: 98%;
+    max-width: 100%;
+    margin: 8px 0 0 0;
+    padding: 8px 1% 4px 1%;
+    height: 32px;
+    display: block;
+}
+
+#link-block {
+    float: right;
+    margin-bottom: 1px;
+}
+
+#top-bar {
+    background-color: var(--main-color);
+    max-width: 100%;
+    margin-top: 0px;
+    padding: 8px 4px 4px 4px;
+}
+
+#project-block {
+    max-width: 100%;
+    display: block;
+    border: 2px solid black;
+    background-color: var(--block-color);
+    padding: 4px 2% 4px 2%;
+}
+
+#project-service-section {
+    margin: 2px 2% 2px 2%;
+    gap: 1%;
+}
+
+#service-block {
+    max-width: 100%;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: var(--block-color);;
+    padding: 4px 2% 4px 2%;
+}
+
+#update-text {
+    float: right;
+    margin: 4px auto 0 auto ;
+}
