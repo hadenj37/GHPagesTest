@@ -7,7 +7,7 @@
     <!-- ICONS -->
     <link rel="shortcut icon" href="../imgs/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="../imgs/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imgs/favicon-16x16.png">
 
     <!-- STYLES -->
     <link href="../css/NavyMind.css" rel="stylesheet">
@@ -15,7 +15,8 @@
     
     <title>Haden Johnson - Home</title>
 </head>
-<body class="navy-style">
+<body id="bod" class="navy-style">
+    <script src="../js/funcs.js"></script>
     <div id="top-bar">
         <h1 class="title-text">
             Haden Johnson
@@ -46,32 +47,127 @@
     </div>
     <hr>
     <div id="project-service-section" class="column-pair">
-        <div id="project-block">
+
+        <div id="portfolio-block">
             <h2>
                 Portfolio
             </h2>
-            <p>
-                Here are some of the projects I've made.
-            </p>
+            <hr class="section-separator">
+            <div class="project-block">    
+                <img src="../imgs/Thumbnail.jpg" class="project-img">
+                <h3>
+                    Chopsticks Animated
+                </h3>
+                <p>
+                    Using techniques from my Computer Animation and Artificial Intelligence classes, 
+                    I made a single-player virtualization of the game "Chopsticks".
+                    <a class="plain-link" href="https://hadenj37.github.io/SticksAnimated.github.io/index.html">
+                        <button class="link-button">
+                            Project Site
+                        </button>
+                    </a>
+                    <a class="plain-link" href="https://github.com/hadenj37/SticksAnimated.github.io">
+                        <button class="link-button">
+                            Code
+                        </button>
+                    </a>
+                </p>
+            </div>
+            <hr class="section-separator">
+            <div class="project-block">
+                <h3>
+                    Speed-Viewer
+                </h3>
+                <p>
+                    Speed-Viewer is an interactive data visualization webapp that displays speedrun data from 
+                    <a class="inline-link" href="https://www.speedrun.com">Speedrun.com</a>.
+                    It utilizes the d3.js library to plot scatterplots of games added by the user, and is styled using Tailwind CSS.
+                    In this group project, I was responsible for laying a lot of the functional groundwork: 
+                    I created the initial design for the interface and implemented much of the graphing functionality.
+                    <a class="plain-link" href="https://hadenj37.github.io/Speed-Viewer.github.io/index.html">
+                        <button class="link-button">
+                            Try It Out
+                        </button>
+                    </a>
+                    <a class="plain-link" href="https://github.com/hadenj37/Speed-Viewer.github.io">
+                        <button class="link-button">
+                            Code
+                        </button>
+                    </a>
+                </p>
+            </div>
+            <hr class="section-separator">
+            <div class="project-block">
+                <h3>
+                    PhotoCoach
+                </h3>
+                <p>
+                    For my senior capstone project, my team and I designed and implemented PhotoCoach, 
+                    a mobile application intended to provide users actionable feedback to help them develop thier mobile photography skills.
+                    I helped implement and automate testing on the frontend, which was developed using Flutter.
+                </p>
+            </div>
+            <hr class="section-separator">
+            <div class="project-block">
+                <h3>
+                    Ray Tracer
+                </h3>
+                <p>
+                    My Computer Graphics class required me to implement a ray tracer from scratch using OpenGL and C++.
+                    It handles sphere and plane collision, reflections, and lighting with shadows.
+                </p>
+                <img src="../imgs/Two.png" class="ray-img">
+                <img src="../imgs/Three.png" class="ray-img">
+                <img src="../imgs/Five.png" class="ray-img">
+                <img src="../imgs/Seven.png" class="ray-img">
+                <img src="../imgs/Eight.png" class="ray-img">
+            </div>
         </div>
         <div id="service-block">
             <h2>
                 Service
             </h2>
+            <hr class="section-separator">
             <h3>
-                Production Volunteer at Grace Bible Church
+                Production Volunteer - Grace Bible Church
             </h3>
             <p>
-                August marks my start as a production volunteer at Grace Bible Church.
+                August 2024 marks my start as a production volunteer at Grace Bible Church.
             </p>
+            <hr class="section-separator">
+            <h3>
+                Roadies - Breakaway Ministries
+            </h3>
+            <p>
+                For my last three undergraduate semesters, I had the priviledge of serving on Breakaway Ministries' Roadie team. 
+                Breakaway Ministries is a parachurch ministry that exists to help "any and every college student take thier first or next step with Jesus Christ." 
+                It takes place in Texas A&M's Reed Arena every Tuesday at 9PM during the fall and spring semesters. 
+                The Roadies are responsible for setting up and taking down the stage. My main tasks included setting up the speakers and the curtains behind the stage. 
+                <a class="plain-link" href="https://www.breakawayministries.org/">
+                    <button class="link-button">
+                        Breakaway Website
+                    </button>
+                </a>
+                <a class="plain-link" href="https://www.youtube.com/channel/UCDnlphNEL2H88wcl6BeBk-A">
+                    <button class="link-button">
+                        Breakaway YouTube
+                    </button>
+                </a>
+                <a class="plain-link" href="https://open.spotify.com/show/5Hfgtjks4zKSljRdvybGid?si=7821275bf6084a77">
+                    <button class="link-button">
+                        Breakaway Spotify
+                    </button>
+                </a>
+            </p>
+            <hr class="section-separator">
         </div>
     </div>
     <div id="bottom-bar">
-        <button id="style-button">
+        <button id="style-button" onclick="cycleStyle();">
             Change Style
         </button>
         <p id="update-text">
-            Last updated: 8/7/24
+            Last updated: 8/10/24
         </p>
     </div>
 </body>
