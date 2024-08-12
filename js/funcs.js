@@ -16,6 +16,8 @@ window.onload = function(){
         styleIndex = 0;
     }
 
+    console.log(`Style index is ${styleIndex}`);
+
     // Set body's class to set style
     var bodyElement = document.getElementById("bod");
     bodyElement.className = styleNames[styleIndex];
@@ -27,6 +29,8 @@ function cycleStyle() {
     styleIndex += 1;
     styleIndex %= styleNames.length;
     localStorage.setItem("styleIndex", styleIndex.toString());
+
+    console.log(`Style index is now ${styleIndex}`);
 
     // Set body's class to set style
     var bodyElement = document.getElementById("bod");
