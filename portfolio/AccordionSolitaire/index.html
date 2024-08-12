@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="accordion.css" rel="stylesheet">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <title>Accordion Solitaire</title>
+</head>
+<body>
+    <div id="top-bar">
+        <h1>
+            Accordion Solitaire
+        </h1>
+        <div id="button-section">
+            <button id="help-button" onclick="showHelp()">
+                How to Play
+            </button>
+            <button id="init-button" onclick="initializeGame();">
+                New Game
+            </button>
+        </div>
+    </div>
+    <div id="gameboard"></div>
+    <div id="help-box" class="pop-up hidden">
+        <h2>
+            Here's How To Play
+        </h2>
+        <p>
+            Goal: Stack cards to the left until all cards are in one stack.
+        </p>
+        <p>
+            Cards/stacks move to the left by one or three spots.
+            Cards can only be stacked onto other cards with the same rank or suit
+        </p>
+        <div class="card available red" >8♦</div>
+        <div class="card" >J♣</div>
+        <div class="card available red" >Q♥</div>
+        <div class="card selected red" >8♥</div>
+        <ol>
+            <li>
+                Click on a card to select it. The selected card is highlighted yellow.
+                <ul>
+                    <li>
+                        Click the card again to un-select it.
+                    </li>
+                    <li>
+                        Click another unhilighted card to select the other card instead.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Click on a blue hilighted card to move the selected card on top of it.
+            </li>
+        </ol>
+    </div>
+    <div id="game-over-box" class="pop-up hidden">
+         
+    </div>
+    <script src="accordion.js" onload="initializeGame()"></script>
+</body>
+</html>
