@@ -17,6 +17,10 @@ window.onload = function(){
 
     // Set body's class to set style
     var bodyElement = document.getElementById("bod");
+    if(bodyElement.className == "undefined") {
+        styleIndex = 0;
+        localStorage.setItem("styleIndex", "0");
+    }
     bodyElement.className = styleNames[styleIndex];
 }
 
